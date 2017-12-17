@@ -6,15 +6,25 @@ import java.util.ArrayList;
  * Created by Lagarde on 17.12.2017.
  */
 public class Training {
-    private static int classCount = 3;
-    private static int attributeCount = 6;
+    private int classCount;
+    private int attributeCount;
+
+    private ArrayList<LClass> classes;
 
     private double b_it[][];
     private double b_t[];
     private double a_it[][];
 
-    public Training(ArrayList<LClass> classes) {
+    public Training(){
+        a_it = new double[classCount][attributeCount];
+        b_it = new double[classCount][attributeCount];
+        b_t = new double[attributeCount];
+    }
+
+    public Training(ArrayList<LClass> classes, int attributeCount) {
         this.classes = classes;
+        this.classCount = classes.size();
+        this.attributeCount = attributeCount;
         a_it = new double[classCount][attributeCount];
         b_it = new double[classCount][attributeCount];
         b_t = new double[attributeCount];
@@ -67,9 +77,6 @@ public class Training {
     public void setA_it(double[][] a_it) {
         a_it = a_it;
     }
-
-    private ArrayList<LClass> classes;
-
 
     public ArrayList<LClass> getClasses() {
         return classes;

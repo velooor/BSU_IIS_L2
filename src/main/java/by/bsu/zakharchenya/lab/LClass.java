@@ -8,8 +8,6 @@ import java.util.ArrayList;
 public class LClass {
     private ArrayList<LAttribute> attributes;
 
-
-
     public ArrayList<LAttribute> getAttributes() {
         return attributes;
     }
