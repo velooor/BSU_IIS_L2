@@ -1,5 +1,7 @@
 package by.bsu.zakharchenya.lab;
 
+import by.bsu.zakharchenya.lab.enity.LClass;
+
 import java.util.ArrayList;
 
 /**

@@ -1,6 +1,6 @@
 package by.bsu.zakharchenya;
 
-import by.bsu.zakharchenya.lab.LClass;
+import by.bsu.zakharchenya.lab.enity.LClass;
 import by.bsu.zakharchenya.lab.Recognizing;
 import org.junit.*;
 

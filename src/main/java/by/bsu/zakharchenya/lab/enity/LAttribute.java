@@ -1,4 +1,4 @@
-package by.bsu.zakharchenya.lab;
+package by.bsu.zakharchenya.lab.enity;
 
 /**
  * Created by Lagarde on 18.12.2017.

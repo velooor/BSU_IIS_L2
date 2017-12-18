@@ -1,4 +1,4 @@
-package by.bsu.zakharchenya.lab;
+package by.bsu.zakharchenya.lab.enity;
 
 import java.util.ArrayList;
 
@@ -7,6 +7,17 @@ import java.util.ArrayList;
  */
 public class LClass {
     private String name;
+    private int id;
+
+    public LClass(String name, int id, ArrayList<LAttribute> attributes) {
+        this.name = name;
+        this.id = id;
+        this.attributes = attributes;
+    }
+
+    public int getId() {
+        return id;
+    }
 
     private ArrayList<LAttribute> attributes;
 

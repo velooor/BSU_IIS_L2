@@ -1,8 +1,10 @@
 package by.bsu.zakharchenya.lab;
 
+import by.bsu.zakharchenya.lab.enity.LAttribute;
+import by.bsu.zakharchenya.lab.enity.LClass;
+
 import java.util.ArrayList;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Created by Lagarde on 18.12.2017.
@@ -11,6 +13,14 @@ public class Recognizing extends Training {
 
     private Map<String, Integer> averageScores;
     private Map<Integer, String> values;
+    private LStart lStart;
+
+    public Recognizing(ArrayList<LClass> classes, Map<String, Integer> averageScores, Map<Integer, String> values, LStart lStart) {
+        super(classes, averageScores.size());
+        this.averageScores = averageScores;
+        this.values = values;
+        this.lStart = lStart;
+    }
 
     public Recognizing(ArrayList<LClass> classes, Map<String, Integer> averageScores, Map<Integer, String> values) {
         super(classes, averageScores.size());
@@ -29,15 +39,20 @@ public class Recognizing extends Training {
                 m_x[t] = m(vector, classes.get(i).getAttributes().get(t), i, a);
             }
             m_k[i] = max(m_x);
+            lStart.writeLine("[INFO] m_k for '" + classes.get(i).getName() + "'   = " + m_k[i]);
         }
         return classes.get(maxI(m_k)).getName();
     }
 
     public int[] vectorGenerator(Map<String, Integer> input) {
         int[] vector = new int[attributeCount];
+        String output = "[ ";
         for(int i = 0; i < attributeCount; i++){
             vector[i] = input.get(values.get(i)) > averageScores.get(values.get(i)) ? 1 : 0;
+            //output += String.valueOf(vector[i]);
+            output = output.concat(vector[i] + "  ");
         }
+        lStart.writeLine("[INFO] vector is " + output + " ]");
         return vector;
     }
 
