@@ -118,9 +118,9 @@ public class LStart implements ActionListener {
         textArea.setText("");
         Map<String, Integer> input = new HashMap<>();
         for (int i = 0; i < attributeCount; i++) {
-            int val = Integer.parseInt((String) JOptionPane.showInputDialog(getMasterComponent(), "Choose " + values.get(i) + " (" + averageScores.get(values.get(i)) + "):",
+            Integer val = Integer.parseInt((String) JOptionPane.showInputDialog(getMasterComponent(), "Choose " + values.get(i) + " (" + averageScores.get(values.get(i)) + "):",
                     "Choose value for " + values.get(i) + ":", JOptionPane.QUESTION_MESSAGE, null, null, null));
-            if (input == null) {
+            if (val == null) {
                 writeLine("You cancelled input!");
                 return;
             }
@@ -132,7 +132,7 @@ public class LStart implements ActionListener {
         Recognizing recognizing = new Recognizing(classes, averageScores, values, this);
         String answer = recognizing.recognize(input);
         writeLine("-----------------------------------------------------");
-        writeLine("           FINISHED");
+        writeLine("        FINISHED");
         writeLine("");
         writeLine("Answer is: " + answer);
 

@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f85d922-fb8a-4c5e-bf92-fb931bc50f0c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/LStart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/Run.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/by/bsu/zakharchenya/DataParserTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/bsu/zakharchenya/lab/LAttribute.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/bsu/zakharchenya/lab/LClass.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/LAttribute.java" afterPath="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/enity/LAttribute.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/LClass.java" afterPath="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/enity/LClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/bsu/zakharchenya/lab/Recognizing.class" afterPath="$PROJECT_DIR$/target/classes/by/bsu/zakharchenya/lab/Recognizing.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/bsu/zakharchenya/lab/Training.class" afterPath="$PROJECT_DIR$/target/classes/by/bsu/zakharchenya/lab/Training.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/by/bsu/zakharchenya/LRecTest.class" afterPath="$PROJECT_DIR$/target/test-classes/by/bsu/zakharchenya/LRecTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BSU_IIS_L2.iml" afterPath="$PROJECT_DIR$/BSU_IIS_L2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/Recognizing.java" afterPath="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/Recognizing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/Training.java" afterPath="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/Training.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/bsu/zakharchenya/LRecTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/bsu/zakharchenya/LRecTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/LStart.java" afterPath="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/LStart.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Run.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Run.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/Run.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="371">
-              <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+              <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LStart.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LStart.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/LStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="130" column="56" lean-forward="true" selection-start-line="130" selection-start-column="56" selection-end-line="130" selection-end-column="56" />
+            <state relative-caret-position="282">
+              <caret line="125" column="13" lean-forward="true" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,9 +153,9 @@
         <option value="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/Start.java" />
         <option value="$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class" />
         <option value="$PROJECT_DIR$/src/test/java/by/bsu/zakharchenya/DataParserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/LStart.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/Recognizing.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/Run.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/LStart.java" />
       </list>
     </option>
   </component>
@@ -806,7 +793,7 @@
       <workItem from="1513540003451" duration="883000" />
       <workItem from="1513541897820" duration="5295000" />
       <workItem from="1513584758568" duration="9774000" />
-      <workItem from="1513595041393" duration="6917000" />
+      <workItem from="1513595041393" duration="7322000" />
     </task>
     <task id="LOCAL-00001" summary="recognizing">
       <created>1513588056627</created>
@@ -822,7 +809,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513594717632</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ui, file reader">
+      <created>1513602964378</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1513602964378</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -858,7 +852,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22869000" />
+    <option name="totallyTimeSpent" value="23274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -907,7 +901,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="recognizing" />
     <MESSAGE value="tests passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests passed" />
+    <MESSAGE value="ui, file reader" />
+    <option name="LAST_COMMIT_MESSAGE" value="ui, file reader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1047,6 +1042,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,6 +1050,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,16 +1115,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/LStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="130" column="56" lean-forward="true" selection-start-line="130" selection-start-column="56" selection-end-line="130" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/Training.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
@@ -1157,7 +1144,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/Run.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
-          <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/bsu/zakharchenya/lab/LStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="125" column="13" lean-forward="true" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
