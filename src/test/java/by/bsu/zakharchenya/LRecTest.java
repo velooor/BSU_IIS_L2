@@ -20,21 +20,21 @@ public class LRecTest extends Assert {
         averageScores.put("def", 56);
         averageScores.put("phy", 70);
 
-        int[][] attrs = {{1, 1, 0, 1, 0, 1},
-                {1, 1, 1, 1, 0, 1},
-                {1, 1, 0, 0, 0, 1},
-                {1, 1, 1, 0, 0, 1}};
+        int[][] attrs = {   {1, 1, 0, 1, 0, 1},
+                            {1, 1, 1, 1, 0, 1},
+                            {1, 1, 0, 0, 0, 1},
+                            {1, 1, 1, 0, 0, 1}};
         classes.add(new LClass("forward", attrs));
-        int[][] attrss = {{1, 1, 1, 1, 1, 0},
-                {0, 1, 1, 0, 1, 0},
-                {0, 0, 1, 0, 1, 1},
-                {1, 1, 1, 1, 1, 1},
-                {1, 0, 1, 0, 1, 1}};
+        int[][] attrss = {  {1, 1, 1, 1, 1, 0},
+                            {0, 1, 1, 0, 1, 0},
+                            {0, 0, 1, 0, 1, 1},
+                            {1, 1, 1, 1, 1, 1},
+                            {1, 0, 1, 0, 1, 1}};
         classes.add(new LClass("midfielder", attrss));
-        int[][] attrsss = {{1, 0, 0, 0, 1, 1},
-                {0, 0, 0, 0, 1, 1},
-                {1, 0, 1, 1, 1, 1},
-                {1, 0, 1, 1, 1, 0}};
+        int[][] attrsss = { {1, 0, 0, 0, 1, 1},
+                            {0, 0, 0, 0, 1, 1},
+                            {1, 0, 1, 1, 1, 1},
+                            {1, 0, 1, 1, 1, 0}};
         classes.add(new LClass("defender", attrsss));
 
         values.put(0, "pac");
