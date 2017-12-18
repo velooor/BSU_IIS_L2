@@ -6,6 +6,12 @@ import java.util.ArrayList;
  * Created by Lagarde on 17.12.2017.
  */
 public class LClass {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
     private ArrayList<LAttribute> attributes;
 
     public ArrayList<LAttribute> getAttributes() {
