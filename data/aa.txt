@@ -1,6 +1,6 @@
-aa 21
-bb 25
-cc 20
-dd 29
-ee 25
-ff 24
+speed 21
+power 25
+length 20
+height 29
+width 25
+stels 24
