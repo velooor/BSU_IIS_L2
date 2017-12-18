@@ -58,32 +58,15 @@ public class Training {
         return b_it;
     }
 
-//    public void setB_it(double[][] b_it) {
-//        b_it = b_it;
-//    }
-
     public double[] getB_t() {
         return b_t;
     }
-
-//    public void setB_t(double[] b_t) {
-//        b_t = b_t;
-//    }
 
     public double[][] getA_it() {
         return a_it;
     }
 
-//    public void setA_it(double[][] a_it) {
-//        a_it = a_it;
-//    }
-
     public ArrayList<LClass> getClasses() {
         return classes;
     }
-
-//    public void setClasses(ArrayList<LClass> classes) {
-//        this.classes = classes;
-//    }
-
 }

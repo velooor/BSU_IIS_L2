@@ -1,11 +1,25 @@
 package by.bsu.zakharchenya.lab;
 
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.Set;
+
 /**
  * Created by Lagarde on 18.12.2017.
  */
 public class Recognizing extends Training {
 
-    public void recognize(int[] vector) {
+    private Map<String, Integer> averageScores;
+    private Map<Integer, String> values;
+
+    public Recognizing(ArrayList<LClass> classes, Map<String, Integer> averageScores, Map<Integer, String> values) {
+        super(classes, averageScores.size());
+        this.averageScores = averageScores;
+        this.values = values;
+    }
+
+    public String recognize(Map<String, Integer> input) {
+        int[] vector = vectorGenerator(input);
         double a[][] = a_it;
         double m_k[] = new double[classCount];
 
@@ -16,7 +30,15 @@ public class Recognizing extends Training {
             }
             m_k[i] = max(m_x);
         }
-        determine_position(m_k);
+        return classes.get(maxI(m_k)).getName();
+    }
+
+    public int[] vectorGenerator(Map<String, Integer> input) {
+        int[] vector = new int[attributeCount];
+        for(int i = 0; i < attributeCount; i++){
+            vector[i] = input.get(values.get(i)) > averageScores.get(values.get(i)) ? 1 : 0;
+        }
+        return vector;
     }
 
     private int t(double a, double b) {
@@ -30,20 +52,30 @@ public class Recognizing extends Training {
             res1 += Math.pow(-1, t(x[j], attr.getVector()[j])) * a[i][j];
             res2 += a[i][j];
         }
-        return Math.max(0, res1/res2);
+        return Math.max(0, res1 / res2);
     }
 
-    private double max(double [] a){
+    private double max(double[] a) {
         double max = 0;
-        if(a.length != 0) max = a[0];
+        if (a.length != 0) max = a[0];
         else return 0;
-        for(int i = 1; i < a.length; i++){
-            if(a[i] > max) max = a[i];
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] > max) max = a[i];
         }
         return max;
     }
 
-    private double determine_position(double []m_k){
-        return 0;
+    private int maxI(double[] a) {
+        double max = 0;
+        int resI = 0;
+        if (a.length != 0) max = a[0];
+        else return 0;
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] > max) {
+                max = a[i];
+                resI = i;
+            }
+        }
+        return resI;
     }
 }
